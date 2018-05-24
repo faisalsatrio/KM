@@ -10,12 +10,12 @@
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link href="asset/lightbox.css" rel="stylesheet">
     <link href="asset/animate.css" rel="stylesheet">
-	<link href="asset/main.css" rel="stylesheet">
-	<link href="asset/responsive.css" rel="stylesheet">
+    <link href="asset/main.css" rel="stylesheet">
+    <link href="asset/responsive.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-	    <script src="js/html5shiv.js"></script>
-	    <script src="js/respond.min.js"></script>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="http://demo.themeum.com/html/triangle/1.1/images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://demo.themeum.com/html/triangle/1.1/images/ico/apple-touch-icon-144-precomposed.png">
@@ -33,11 +33,17 @@
     .padding-top{
         padding-top: 15px;
     }
+    .up, .down {
+        cursor: pointer;
+    }
+    .post-content{
+        padding-bottom: 0px;
+    }
     </style>
 </head><!--/head-->
 
 <body>
-	<header id="header">
+    <header id="header">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 overflow">
@@ -81,7 +87,7 @@
                             </ul>
                         </li>
 
-                          <li class="dropdown"><a href="#">Redeem Points </a>
+                          <li class="dropdown"><a href="redeem.html">Redeem Points </a>
                             
                         </li>
 
@@ -145,227 +151,52 @@
             <div class="row">
                 <div class="col-md-9 col-sm-7">
                     <div class="row">
-                         <div class="col-sm-12 col-md-12">
-                            <div class="text-right">
-                                <a href="post.html" class="btn btn-default">Post a Question</a>
-                            </div>
-                            <div class="single-blog single-column">
+                         <div class="col-sm-12 col-md-12" id="forum">
+                            
+
+                            <h1 style="margin-top:0px;">Post a Question</h1>
+                            <div class="single-blog single-column"  >
                                 <div class="post-content overflow">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h2 class="post-title bold"><a href="detailForum.html">Advanced business cards design</a></h2>
-                                            <div style="line-height: 30px">
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">business</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">management</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">ict</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">design</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">user interface</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">cantik</span>
-                                                
-                                            </div>
+                                    <div class="row" style="margin-top:20px">
+                                        <div class="col-md-1">
                                         </div>
-                                        <div class="col-md-4">
-                                            <h3 class="post-author"><a href="#">Posted by UserBernamaBellaCantik</a></h3>
-                                            Asked 42 mins ago<br/>
-                                            Last answered 10 mins ago
+                                        <div class="col-md-2"><span style="font-size:13pt">Subject</span></div>
+                                        <div class="col-md-9" style="margin-left:-10px;">
+                                            <input type="text" placeholder="enter your subject here..." style="padding:3px;width:100%;font-size:13pt"/>
                                         </div>
                                     </div>
-                                    <div class="post-bottom overflow">
-                                        <ul class="nav navbar-nav post-nav">
-                                            <li><a href="#"><i class="fa fa-thumbs-up"></i>10 Votes</a></li>
-                                            <li><a href="#"><i class="fa fa-eye"></i>32 Views</a></li>
-                                            <li><a href="#"><i class="fa fa-comments"></i>3 Answers</a></li>
-                                        </ul>
+
+                                    <div class="row" style="margin-top:20px">
+                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-2"><span style="font-size:13pt">Question</span></div>
+                                        <div class="col-md-9" style="margin-left:-10px;">
+                                            <textarea style="width:100%;height:200px" placeholder="type your question here..."></textarea>
+                                            <button class="btn btn-success" style="display:none">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px">
+                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-9" style="margin-left:-10px;">
+                                            <i>You will be posting as <b>Bella Oke</b></i><br/>
+                                            <a href="detailForum.html" class="btn btn-success">Submit</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
-                        <div class="col-sm-12 col-md-12">
-                            <div class="single-blog single-column">
-                                <div class="post-content overflow">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h2 class="post-title bold"><a href="detailForum.html">Advanced business cards design</a></h2>
-                                            <div style="line-height: 30px">
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">business</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">management</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">ict</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">design</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">user interface</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">cantik</span>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <h3 class="post-author"><a href="#">Posted by UserBernamaBellaCantik</a></h3>
-                                            Asked 42 mins ago<br/>
-                                            Last answered 10 mins ago
-                                        </div>
-                                    </div>
-                                    <div class="post-bottom overflow">
-                                        <ul class="nav navbar-nav post-nav">
-                                            <li><a href="#"><i class="fa fa-thumbs-up"></i>10 Votes</a></li>
-                                            <li><a href="#"><i class="fa fa-eye"></i>32 Views</a></li>
-                                            <li><a href="#"><i class="fa fa-comments"></i>3 Answers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-12">
-                            <div class="single-blog single-column">
-                                <div class="post-content overflow">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h2 class="post-title bold"><a href="detailForum.html">Advanced business cards design</a></h2>
-                                            <div style="line-height: 30px">
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">business</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">management</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">ict</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">design</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">user interface</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">cantik</span>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <h3 class="post-author"><a href="#">Posted by UserBernamaBellaCantik</a></h3>
-                                            Asked 42 mins ago<br/>
-                                            Last answered 10 mins ago
-                                        </div>
-                                    </div>
-                                    <div class="post-bottom overflow">
-                                        <ul class="nav navbar-nav post-nav">
-                                            <li><a href="#"><i class="fa fa-thumbs-up"></i>10 Votes</a></li>
-                                            <li><a href="#"><i class="fa fa-eye"></i>32 Views</a></li>
-                                            <li><a href="#"><i class="fa fa-comments"></i>3 Answers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-12 col-md-12">
-                            <div class="single-blog single-column">
-
-                                <div class="post-content overflow">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h2 class="post-title bold"><a href="detailForum.html">Advanced business cards design</a></h2>
-                                            <div style="line-height: 30px">
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">business</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">management</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">ict</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">design</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">user interface</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">cantik</span>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <h3 class="post-author"><a href="#">Posted by UserBernamaBellaCantik</a></h3>
-                                            Asked 42 mins ago<br/>
-                                            Last answered 10 mins ago
-                                        </div>
-                                    </div>
-                                    <div class="post-bottom overflow">
-                                        <ul class="nav navbar-nav post-nav">
-                                            <li><a href="#"><i class="fa fa-thumbs-up"></i>10 Votes</a></li>
-                                            <li><a href="#"><i class="fa fa-eye"></i>32 Views</a></li>
-                                            <li><a href="#"><i class="fa fa-comments"></i>3 Answers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-12">
-                            <div class="single-blog single-column">
-
-                                <div class="post-content overflow">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h2 class="post-title bold"><a href="detailForum.html">Advanced business cards design</a></h2>
-                                            <div style="line-height: 30px">
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">business</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">management</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">ict</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">design</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">user interface</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">cantik</span>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <h3 class="post-author"><a href="#">Posted by UserBernamaBellaCantik</a></h3>
-                                            Asked 42 mins ago<br/>
-                                            Last answered 10 mins ago
-                                        </div>
-                                    </div>
-                                    <div class="post-bottom overflow">
-                                        <ul class="nav navbar-nav post-nav">
-                                            <li><a href="#"><i class="fa fa-thumbs-up"></i>10 Votes</a></li>
-                                            <li><a href="#"><i class="fa fa-eye"></i>32 Views</a></li>
-                                            <li><a href="#"><i class="fa fa-comments"></i>3 Answers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-12">
-                            <div class="single-blog single-column">
-
-                                <div class="post-content overflow">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h2 class="post-title bold"><a href="detailForum.html">Advanced business cards design</a></h2>
-                                            <div style="line-height: 30px">
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">business</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">management</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">ict</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">design</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">user interface</span>
-                                                <span style="margin-right:5px;background-color:#E1ECF4;color:#39739d;padding:5px;">cantik</span>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <h3 class="post-author"><a href="#">Posted by UserBernamaBellaCantik</a></h3>
-                                            Asked 42 mins ago<br/>
-                                            Last answered 10 mins ago
-                                        </div>
-                                    </div>
-                                    <div class="post-bottom overflow">
-                                        <ul class="nav navbar-nav post-nav">
-                                            <li><a href="#"><i class="fa fa-thumbs-up"></i>10 Votes</a></li>
-                                            <li><a href="#"><i class="fa fa-eye"></i>32 Views</a></li>
-                                            <li><a href="#"><i class="fa fa-comments"></i>3 Answers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="blog-pagination">
-                        <ul class="pagination">
-                          <li><a href="#">left</a></li>
-                          <li><a href="#">1</a></li>
-                          <li><a href="#">2</a></li>
-                          <li class="active"><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">5</a></li>
-                          <li><a href="#">6</a></li>
-                          <li><a href="#">7</a></li>
-                          <li><a href="#">8</a></li>
-                          <li><a href="#">9</a></li>
-                          <li><a href="#">right</a></li>
-                        </ul>
-                    </div>
+                    
                  </div>
                 <div class="col-md-3 col-sm-5">
                     <div class="sidebar blog-sidebar">
                         <div class="sidebar-item  recent">
+                            
+
                             <h3>Pinned Forum Posts</h3>
                             <div class="media">
                                 <div class="pull-left">
@@ -520,6 +351,32 @@
     <script type="text/javascript" src="asset/lightbox.js"></script>
     <script type="text/javascript" src="asset/wow.js"></script>
     <script type="text/javascript" src="asset/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".up").click(function() {
+                var val = $(".skor").html();
+                val++;
+                $(".skor").html(val);
+            });
+            $(".down").click(function() {
+                var val = $(".skor").html();
+                val--;
+                $(".skor").html(val);
+            });
+
+            $("#answerbox").click(function() {
+                $("#answerbox").animate({height: "200px"});
+                $("#answersubmit").fadeIn();
+            });
+
+            $("#answersubmit").click(function() {
+                $("#answerexample").clone().appendTo("#forum");
+                $("#answerbox").animate({height: "50px"});
+                $("#answerbox").val("");
+                $("#answersubmit").fadeOut();
+            });
+        });
+    </script>
 
 
 <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src=""><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>

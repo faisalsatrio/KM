@@ -151,7 +151,7 @@
             <div class="row">
                 <div class="col-md-9 col-sm-7">
                     <div class="row">
-                         <div class="col-sm-12 col-md-12">
+                         <div class="col-sm-12 col-md-12" id="forum">
                             <div class="single-blog single-column">
                                 <div class="post-content overflow">
                                     <div class="row">
@@ -206,6 +206,20 @@
                             <div class="single-blog single-column"  >
                                 <div class="post-content overflow">
                                     <div class="row">
+                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-2"><span style="font-size:15pt">Answer this question</span></div>
+                                        <div class="col-md-9" style="margin-left:-10px;">
+                                            <textarea id="answerbox" style="width:100%;height:50px" placeholder="type your answer here..."></textarea>
+                                            <button id="answersubmit" class="btn btn-success" style="display:none">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-blog single-column"  >
+                                <div class="post-content overflow">
+                                    <div class="row">
                                         <div class="col-md-1"></div>
                                         <div class="col-md-2 text-center">
                                         <i id="up1" class="up fa fa-caret-up fa-5x"></i><br/>
@@ -229,7 +243,7 @@
                                 </div>
                             </div>
 
-                            <div class="single-blog single-column"  >
+                            <div class="single-blog single-column" id="answerexample">
                                 <div class="post-content overflow">
                                     <div class="row">
                                         <div class="col-md-1"></div>
@@ -432,6 +446,18 @@
                 var val = $(".skor").html();
                 val--;
                 $(".skor").html(val);
+            });
+
+            $("#answerbox").click(function() {
+                $("#answerbox").animate({height: "200px"});
+                $("#answersubmit").fadeIn();
+            });
+
+            $("#answersubmit").click(function() {
+                $("#answerexample").clone().appendTo("#forum");
+                $("#answerbox").animate({height: "50px"});
+                $("#answerbox").val("");
+                $("#answersubmit").fadeOut();
             });
         });
     </script>
